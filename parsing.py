@@ -105,7 +105,7 @@ def find_detail_schedule(date_for_schedule):
     lol = ''
     for i in dict_date:
         if i == date_for_schedule:
-            lol = dict_date.items()!
+            lol = dict_date.items()
 
     response_schedule = requests.get(find_url_for_group(122111))
     response_schedule.encoding = 'utf-8'
