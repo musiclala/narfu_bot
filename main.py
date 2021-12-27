@@ -1,6 +1,6 @@
 # import telebot
 #
-# bot = telebot.TeleBot('2139289561:AAEMvhuxvVOPoHj9yXYmiLLmA4rO5UN8UUY')
+# bot = telebot.TeleBot('')
 #
 #
 # @bot.message_handler(content_types=['text'])
