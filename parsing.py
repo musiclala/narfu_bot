@@ -103,9 +103,10 @@ print(find_date())
 def find_detail_schedule(date_for_schedule):
     dict_date = find_date()
     lol = ''
-    for i in dict_date:
-        if i == date_for_schedule:
-            lol = dict_date.items()
+    for key, value in dict_date:
+        if key == date_for_schedule:
+            lol = value
+            break
 
     response_schedule = requests.get(find_url_for_group(122111))
     response_schedule.encoding = 'utf-8'
@@ -114,5 +115,5 @@ def find_detail_schedule(date_for_schedule):
     return lol
 
 
-print(find_detail_schedule('суббота,17.12.21'))
+print(find_detail_schedule('среда,29.12.21'))
 print(date)
